@@ -14,7 +14,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 660px;
+    width: 800px;
     background-color: #000;
 }
 
@@ -26,12 +26,15 @@ body {
     color: #000;
     text-align: center;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    padding: 12px 0px;
+    background-color: rgb(167, 182, 184);
+    display: inline
 }
 
 .footer {
-    margin-top: 50px;
+    margin-top: 0.3em;
     flex-shrink: 0;
 }
 

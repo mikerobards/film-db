@@ -9,15 +9,15 @@
 
 // your code goes here
 
-const films = ['Jaws', 'Aliens', 'Bad Santa', 'Casablanca', 'Ghost', 'Twister', 'Legally Blonde',
+const films = ['Jaws', 'Aliens', 'Die Hard', 'Casablanca', 'Breaking Away', 'Twister', 'Dazed and Confused',
     'Elf', 'Zoolander']
-const filmPics = ['images/die-hard.jpg']
+const filmPics = ['images/jaws.jpg', 'images/aliens.jpg', 'images/die-hard.jpg', 'images/casablanca.jpg', 
+'images/breaking-away.jpg', 'images/twister.jpg', 'images/dazed.jpg', 'images/elf.jpg', 'images/zoo.jpg']
 
 const squares = Array.from(document.querySelectorAll('.container div'))
 
 for (let i = 0; i < squares.length; i++) {
-    squares[0].innerHTML = '<img src = `${filmPics[0]}` width="150px" height="150px">'
-    squares[i].innerHTML = films[i]
+    squares[i].innerHTML = `<img src = ${filmPics[i]} width="150px" height="150px"> <p>${films[i]}</p>`
 }
 
 
