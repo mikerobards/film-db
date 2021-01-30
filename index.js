@@ -7,10 +7,19 @@
 // Please solve this using the film array, as this is an array exercise. Do not hardcode the names,
 // even though it might be tempting!
 
-const films = ['Jaws', 'Aliens', 'Bad Santa', 'Casablanca', 'Ghost', 'Twister', 'legally Blonde',
-    'Elf', 'Zoolander']
-
 // your code goes here
+
+const films = ['Jaws', 'Aliens', 'Bad Santa', 'Casablanca', 'Ghost', 'Twister', 'Legally Blonde',
+    'Elf', 'Zoolander']
+const filmPics = ['images/die-hard.jpg']
+
+const squares = Array.from(document.querySelectorAll('.container div'))
+
+for (let i = 0; i < squares.length; i++) {
+    squares[0].innerHTML = '<img src = `${filmPics[0]}` width="150px" height="150px">'
+    squares[i].innerHTML = films[i]
+}
+
 
 
 
